@@ -2,7 +2,7 @@
 
 /**
  * pstr - opcode; prints string from climax of stack
- * @stack: pointer 
+ * @stack: pointer
  * @line_number: line no
  */
 void pstr(stack_t **stack, __attribute__((unused)) unsigned int line_number)
@@ -21,7 +21,7 @@ void pstr(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 		if (((tmp)->n) < 128)
 			break;
 		putchar(tmp->n);
-		tmp =tmp->next;
+		tmp = tmp->next;
 	}
 	putchar('\n');
 }
